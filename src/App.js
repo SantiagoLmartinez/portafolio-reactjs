@@ -16,12 +16,8 @@ function App() {
   return (
     <div className='app-container'>
       <HeaderComp/>
-        {/* <div className={`tt ${text? 'verde' : 'rojo'}`}>
-          <p className={`${text? 'verde' : 'rojo'}`} id='test'>texto de prueba</p>
-          <button text={text} onClick={cambiarTexto}> click</button>
-        </div> */}
-      <FooterComp/>
-      {/* <Portada/> */}
+
+      {/* <FooterComp/> */}
     </div>
   );
 }
