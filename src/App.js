@@ -3,7 +3,7 @@ import React,{useState} from 'react';
 
 import { FooterComp } from './Components/Footer';
 import { HeaderComp } from './Components/Header';
-// import { Portada } from './Components/Portada';
+import { Portada } from './Components/Portada';
 function App() {
 
   const [text, setText] = useState(false)
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className='app-container'>
       <HeaderComp/>
-
+      {/* <Portada /> */}
       {/* <FooterComp/> */}
     </div>
   );

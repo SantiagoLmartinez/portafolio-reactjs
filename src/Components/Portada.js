@@ -5,7 +5,7 @@ export const Portada = () => {
         <div className='portada-container'>
             <div className="portada">
             <div>
-                <h2>Hola mi nombre es Sam</h2>
+                {/* <h2>Hola mi nombre es Sam</h2> */}
                 <p className='text-center'>Bienvenido<span>&#160;</span></p>
             </div>
             <div>

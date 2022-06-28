@@ -47,9 +47,8 @@ export const HeaderComp = () => {
                             </div>
                         </BurgerStyled>
                     </div>
-                    <BgDiv className={`${ initialBg ? 'activeBg' : ''}`}/>
-
                 </div>
+                    <BgDiv className={`${ initialBg ? 'activeBg' : ''}`}/>
             </HeaderStyled>
 
 
@@ -61,6 +60,8 @@ export const HeaderComp = () => {
 //header styles
 const HeaderStyled = styled.header`
 .header{
+  /* position: fixed;
+    z-index: 2; */
     height: 80px;
     width: 100%;
     color: #000;
@@ -102,7 +103,7 @@ const HeaderStyled = styled.header`
     margin-right: auto;
     text-align: center;
     transition: all 1s  ease;
-    
+    z-index: 2;
     a{
         color: yellow;
         display: block;
@@ -117,6 +118,10 @@ const HeaderStyled = styled.header`
     padding: 1em;
 }
 
+.burgerBtnClassname{
+  /* position: fixed; */
+  z-index: 2;
+}
 .burgerBtnClassname{
     @media (min-width: 768px) {
         display: none;
@@ -140,6 +145,8 @@ const BgDiv = styled.div`
         left: 0;
         right: 0;
         border-radius: 0 0 60% 0;
+        z-index: 1;
+
     }
 
 
@@ -153,11 +160,13 @@ const BurgerStyled = styled.div`
 width: 30px;
 margin-right: 20px;
 
+
 }
 .burgerBtn button{
     border: none;
     width: 30px;
-    background-color: #000
+    background-color: #000;
+    
 }
 
 #burgerBtn button.open{
@@ -192,6 +201,7 @@ margin-right: 20px;
   height: 2px;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  
 }
 
 @keyframes top-lane-animation {
