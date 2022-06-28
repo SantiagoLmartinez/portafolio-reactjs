@@ -1,0 +1,47 @@
+.portada{
+    width: 90%;
+    height: 80hv;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.portada p{
+    position: relative;
+    float: left;
+
+} 
+
+.portada  span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color:#000;
+    border-left: 1px solid #fafafa;
+    animation: maquina 2s infinite alternate steps(15);
+} 
+.portada img{
+    margin-left: 2em;
+    width: 200px;
+    border-radius: 50%;
+    border: dotted rgb(224, 148, 7);
+}
+
+.portada-btn-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@keyframes maquina {
+    from{
+        width: 80%;
+    }
+    to{
+        width: 0%;
+    }
+} 
